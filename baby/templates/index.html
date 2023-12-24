@@ -1,0 +1,47 @@
+<!-- <!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>寶寶哭聲檢測器</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="background">
+        <div class="overlay">
+            <div class="content">
+                <h1>Welcome <br>BABY CRY DETECT</h1>
+                <button id="startButton" class="btn">START</button>
+                <button id="stopButton" class="btn" disabled>STOP</button>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>寶寶哭聲檢測器</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="background">
+        <div class="overlay">
+            <div class="content">
+                <h1>Welcome <br>BABY CRY DETECT</h1>
+                <button id="startButton" class="btn">START</button>
+                <button id="stopButton" class="btn" disabled>STOP</button>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <audio id="babyMusicPlayer" controls hidden>
+        <source id="musicSrc" src="" type="audio/mpeg">
+        您的瀏覽器不支持 audio
+    </audio>
+    <!-- <audio id="babyshare" src="https://storage.googleapis.com/baby-cry-music-source/babyshark.mp3" loop></audio> -->
+</body>
+</html>
+

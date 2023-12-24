@@ -1,0 +1,66 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.background {
+    background-image: url('../background.png');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.overlay {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-size: 4em;
+    text-shadow: 2px 2px 4px #ff0000; /* 红色陰影 */
+    margin-top: 0; /* 移除上邊距 */
+}
+
+.btn {
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 4px;
+    box-shadow: 0 9px #999;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn-pressed {
+    background-color: #e84118; /* 按下略暗 */
+    color: #fff; /* 文字顏色 */
+    box-shadow: 0 4px #999; /* 減少陰影 */
+    transform: translateY(4px); /* 下移案紐 */
+}
+
+#startButton {
+    background-color: #f44336;
+    color: white;
+}
+
+#startButton:hover {background-color: #d73833}
+
+#stopButton {
+    background-color: #555555;
+    color: white;
+}
+
+#stopButton:hover {background-color: #3e3e3e}
+
