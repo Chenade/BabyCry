@@ -21,19 +21,19 @@ import random
 
 # from DAI import main as DAI_main
 import threading
-from google.cloud import storage
+# from google.cloud import storage
 
 app = Flask(__name__, static_folder='static')
 
-def get_gcs_url(bucket_name, object_name):
-    storage_client = storage.Client()
-    bucket = storage_client.bucket(bucket_name)
-    blob = bucket.blob(object_name)
-    return blob.generate_signed_url(expiration=600)  # Adjust expiration as needed
+# def get_gcs_url(bucket_name, object_name):
+#     storage_client = storage.Client()
+#     bucket = storage_client.bucket(bucket_name)
+#     blob = bucket.blob(object_name)
+#     return blob.generate_signed_url(expiration=600)  # Adjust expiration as needed
 
 @app.route('/')
 def index():
-    gcs_url = get_gcs_url('gcp-ccsa-bucket', 'babyshare.mp3')
+    gcs_url = 'https://storage.googleapis.com/baby-cry-music-source/'
     return render_template('index.html', gcs_url=gcs_url)
 
 # @app.route('/')
